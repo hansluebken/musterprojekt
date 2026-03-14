@@ -1,0 +1,13 @@
+{
+  "name": "musterprojekt",
+  "version": "1.0.0",
+  "description": "Musterprojekt fuer Claude Code + Coolify Workflow",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}

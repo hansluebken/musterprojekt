@@ -1,0 +1,11 @@
+# Lokale Entwicklung
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    volumes:
+      - ./src:/app/src  # Hot-Reload: Quellcode wird direkt gemountet
+    restart: unless-stopped

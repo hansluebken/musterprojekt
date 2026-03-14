@@ -1,0 +1,14 @@
+# Referenz für Produktion
+# Coolify erstellt seine eigene Config, diese Datei dient nur als Dokumentation.
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    restart: always
+    # Labels für Coolify/Traefik (werden von Coolify automatisch gesetzt):
+    # labels:
+    #   - "traefik.enable=true"
+    #   - "traefik.http.routers.musterprojekt.rule=Host(`musterprojekt.4hl.dev`)"
