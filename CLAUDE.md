@@ -26,9 +26,19 @@ Eine einfache Web-App als Referenz für das Setup: Claude Code (lokal) + Coolify
 ├── package.json
 ├── src/
 │   └── index.js         # App-Einstiegspunkt
-└── scripts/
-    ├── deploy-check.sh  # Prüft ob Server erreichbar
-    └── logs.sh          # Holt Container-Logs vom Server
+├── scripts/
+│   ├── new-project.sh   # ⭐ Neues Projekt aus Template erstellen
+│   ├── deploy-check.sh  # Prüft ob Server erreichbar
+│   └── logs.sh          # Holt Container-Logs vom Server
+└── docs/
+    └── server-setup.md  # Workflow-Dokumentation
+```
+
+## Neues Projekt erstellen
+```bash
+./scripts/new-project.sh
+# Fragt interaktiv nach: Name, Port, Domain
+# Erstellt automatisch: Repo, GitHub, Coolify-Deployment
 ```
 
 ## Entwicklungsworkflow
