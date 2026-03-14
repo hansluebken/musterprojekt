@@ -5,7 +5,7 @@ Eine einfache Web-App als Referenz für das Setup: Claude Code (lokal) + Coolify
 
 ## Server & Deployment
 - **Server:** 4hl.dev
-- **SSH:** `ssh user@4hl.dev`
+- **SSH:** `ssh -p 4321 kuenstler@4hl.dev` (Key: ~/.ssh/hansprobook)
 - **Deployment:** Coolify (Git-Push auf `main` → auto-deploy)
 - **Coolify-Dashboard:** https://coolify.4hl.dev (ggf. anpassen)
 - **App-URL:** https://musterprojekt.4hl.dev (ggf. anpassen)
@@ -47,10 +47,10 @@ Eine einfache Web-App als Referenz für das Setup: Claude Code (lokal) + Coolify
 docker compose up --build
 
 # Server-Logs prüfen
-ssh user@4hl.dev "docker logs musterprojekt-app 2>&1 | tail -50"
+ssh -p 4321 kuenstler@4hl.dev "docker logs musterprojekt-app 2>&1 | tail -50"
 
 # Server-Status
-ssh user@4hl.dev "docker ps | grep musterprojekt"
+ssh -p 4321 kuenstler@4hl.dev "docker ps | grep musterprojekt"
 ```
 
 ## Konventionen
