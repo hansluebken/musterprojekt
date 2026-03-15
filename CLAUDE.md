@@ -18,6 +18,7 @@ Eine einfache Web-App als Referenz für das Setup: Claude Code (lokal) + Coolify
 ## Projektstruktur
 ```
 ├── CLAUDE.md               # Diese Datei – Kontext für Claude Code
+├── PRD.md                  # Product Requirements – WAS soll die Software können?
 ├── README.md               # Einrichtung & Workflow für Entwickler
 ├── Dockerfile              # Multi-Stage Container-Build
 ├── docker-compose.yml      # Lokale Entwicklung
@@ -43,10 +44,11 @@ Eine einfache Web-App als Referenz für das Setup: Claude Code (lokal) + Coolify
 
 ## Contextmanagement
 
-**Wichtig:** Lies bei der ersten Aufgabe die Dateien in `rules/` und `skills/`, um die Projekt-Standards und Code-Patterns zu kennen.
+**Wichtig:** Lies bei der ersten Aufgabe `PRD.md` sowie die Dateien in `rules/` und `skills/`, um Anforderungen, Standards und Code-Patterns zu kennen.
 
 | Verzeichnis | Zweck |
 |-------------|-------|
+| `PRD.md` | Anforderungen, Features, Datenmodell, Geschaeftsregeln |
 | `rules/coding_standards.md` | Naming, Linting, API-Design, Git-Workflow |
 | `rules/projekt_regeln.md` | Deployment, Docker, Dokumentationspflichten |
 | `skills/development.md` | Express, Docker, DB, Test-Patterns |

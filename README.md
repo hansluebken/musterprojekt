@@ -157,6 +157,7 @@ docker compose up --build     # Lokal starten
 
 ```
 ├── CLAUDE.md               # Projektkontext fuer Claude Code
+├── PRD.md                  # Product Requirements Document
 ├── README.md               # Diese Datei
 ├── Dockerfile              # Multi-Stage Container-Build
 ├── docker-compose.yml      # Lokale Entwicklung
@@ -186,6 +187,7 @@ Dieses Projekt nutzt ein strukturiertes Contextmanagement, damit Claude Code bei
 
 ```
 CLAUDE.md          → WAS ist das Projekt? (Stack, Struktur, Befehle)
+PRD.md             → WAS soll es koennen? (Features, Regeln, Datenmodell)
 rules/             → WIE wird entwickelt? (Standards, Konventionen, Regeln)
 skills/            → WELCHE Patterns? (Code-Vorlagen, Best Practices)
 docs/              → WARUM so? (Architektur, Server-Setup, Entscheidungen)

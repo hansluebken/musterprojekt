@@ -193,6 +193,11 @@ sed -i '' "s|https://coolify\.4hl\.dev|${COOLIFY_URL}|g" CLAUDE.md
 sed -i '' "s/musterprojekt-app/${PROJECT_NAME}-app/g" CLAUDE.md
 sed -i '' "s/grep musterprojekt/grep ${PROJECT_NAME}/g" CLAUDE.md
 
+# PRD.md
+sed -i '' "s/# PRD: Musterprojekt/# PRD: ${PROJECT_NAME}/" PRD.md
+sed -i '' "s/| **Projektname** | Musterprojekt |/| **Projektname** | ${PROJECT_NAME} |/" PRD.md
+sed -i '' "s/| **Erstellt** | DATUM |/| **Erstellt** | $(date +%Y-%m-%d) |/" PRD.md
+
 # README.md
 sed -i '' "s/# Musterprojekt/# ${PROJECT_NAME}/" README.md
 sed -i '' "s/musterprojekt\.4hl\.dev/${APP_DOMAIN}/g" README.md
