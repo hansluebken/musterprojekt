@@ -17,22 +17,41 @@ Eine einfache Web-App als Referenz für das Setup: Claude Code (lokal) + Coolify
 
 ## Projektstruktur
 ```
-├── CLAUDE.md            # Diese Datei – Kontext für Claude Code
-├── Dockerfile           # Container-Build
-├── docker-compose.yml   # Lokale Entwicklung
-├── docker-compose.prod.yml  # Referenz für Produktion (Coolify nutzt eigene Config)
-├── .env.example         # Umgebungsvariablen-Vorlage
+├── CLAUDE.md               # Diese Datei – Kontext für Claude Code
+├── README.md               # Einrichtung & Workflow für Entwickler
+├── Dockerfile              # Multi-Stage Container-Build
+├── docker-compose.yml      # Lokale Entwicklung
+├── docker-compose.prod.yml # Referenz für Produktion (Coolify nutzt eigene Config)
+├── .env.example            # Umgebungsvariablen-Vorlage
 ├── .gitignore
 ├── package.json
 ├── src/
-│   └── index.js         # App-Einstiegspunkt
+│   └── index.js            # App-Einstiegspunkt
+├── rules/                  # Regeln für Claude Code
+│   ├── coding_standards.md # Linting, Naming, API-Design, Git-Workflow
+│   └── projekt_regeln.md   # Deployment, Docker, Dokumentationspflichten
+├── skills/                 # Entwicklungs-Patterns für Claude Code
+│   ├── development.md      # Express, Docker, DB, Test-Patterns
+│   └── ninox.md             # Ninox API, Scripting, Schema-Extraktion
 ├── scripts/
-│   ├── new-project.sh   # ⭐ Neues Projekt aus Template erstellen
-│   ├── deploy-check.sh  # Prüft ob Server erreichbar
-│   └── logs.sh          # Holt Container-Logs vom Server
+│   ├── new-project.sh      # ⭐ Neues Projekt aus Template erstellen
+│   ├── deploy-check.sh     # Prüft ob Server erreichbar
+│   └── logs.sh             # Holt Container-Logs vom Server
 └── docs/
-    └── server-setup.md  # Workflow-Dokumentation
+    └── server-setup.md     # Workflow-Dokumentation
 ```
+
+## Contextmanagement
+
+**Wichtig:** Lies bei der ersten Aufgabe die Dateien in `rules/` und `skills/`, um die Projekt-Standards und Code-Patterns zu kennen.
+
+| Verzeichnis | Zweck |
+|-------------|-------|
+| `rules/coding_standards.md` | Naming, Linting, API-Design, Git-Workflow |
+| `rules/projekt_regeln.md` | Deployment, Docker, Dokumentationspflichten |
+| `skills/development.md` | Express, Docker, DB, Test-Patterns |
+| `skills/ninox.md` | Ninox API & Scripting Referenz |
+| `docs/server-setup.md` | Server, Coolify, DNS, Ports, Troubleshooting |
 
 ## Neues Projekt erstellen
 ```bash
