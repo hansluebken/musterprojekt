@@ -193,6 +193,16 @@ sed -i '' "s|https://coolify\.4hl\.dev|${COOLIFY_URL}|g" CLAUDE.md
 sed -i '' "s/musterprojekt-app/${PROJECT_NAME}-app/g" CLAUDE.md
 sed -i '' "s/grep musterprojekt/grep ${PROJECT_NAME}/g" CLAUDE.md
 
+# README.md
+sed -i '' "s/# Musterprojekt/# ${PROJECT_NAME}/" README.md
+sed -i '' "s/musterprojekt\.4hl\.dev/${APP_DOMAIN}/g" README.md
+sed -i '' "s|github.com/hansluebken/musterprojekt|github.com/${GITHUB_USER}/${PROJECT_NAME}|g" README.md
+sed -i '' "s/musterprojekt-app/${PROJECT_NAME}-app/g" README.md
+sed -i '' "s/grep musterprojekt/grep ${PROJECT_NAME}/g" README.md
+sed -i '' "s/localhost:3333/localhost:${APP_PORT}/g" README.md
+sed -i '' "s/PORT=3333/PORT=${APP_PORT}/" README.md
+sed -i '' "s|\"3333\"|\"${APP_PORT}\"|g" README.md
+
 # Scripts
 sed -i '' "s/CONTAINER=\"musterprojekt-app\"/CONTAINER=\"${PROJECT_NAME}-app\"/" scripts/logs.sh
 sed -i '' "s|musterprojekt\.\${SERVER}|${APP_DOMAIN}|" scripts/deploy-check.sh
